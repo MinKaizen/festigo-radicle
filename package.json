@@ -16,7 +16,8 @@
     "translate:update": "for file in ./resources/lang/*.po; do wp i18n update-po ./resources/lang/radicle.pot $file; done",
     "translate:compile": "npm run translate:mo && npm run translate:js",
     "translate:js": "wp i18n make-json ./resources/lang --pretty-print",
-    "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang"
+    "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
@@ -35,6 +36,7 @@
     "@types/alpinejs": "^3.7.1",
     "@types/wordpress__block-editor": "11.5.15",
     "@types/wordpress__blocks": "12.5.14",
+    "husky": "^9.1.7",
     "typescript": "5.5.4"
   },
   "dependencies": {
