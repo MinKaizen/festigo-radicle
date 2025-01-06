@@ -34,7 +34,7 @@ services:
     scanner: false
     overrides:
       # See: https://github.com/lando/node/issues/66
-      image: node:20
+      image: node:22
   sendmailhog:
     type: mailhog
     portforward: true
