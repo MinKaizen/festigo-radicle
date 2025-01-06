@@ -9,9 +9,7 @@
   },
   "type": "module",
   "scripts": {
-    "build": "yarn bud build production",
-    "dev": "yarn bud build development",
-    "translate": "npm run translate:pot && npm run translate:update",
+    "test": "echo 'Success! We dont have any tests for now.'",
     "translate:pot": "wp i18n make-pot . ./resources/lang/radicle.pot --include=\"app,config,resources,public/dist/js\" --domain=\"radicle\"",
     "translate:update": "for file in ./resources/lang/*.po; do wp i18n update-po ./resources/lang/radicle.pot $file; done",
     "translate:compile": "npm run translate:mo && npm run translate:js",
